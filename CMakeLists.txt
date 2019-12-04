@@ -453,8 +453,8 @@ if(NOT DISABLE_DYNAMIC_CODE)
       src/codegen_sse.h
     )
   else()
-    message(WARNING "Dynamic code is only supported with x64, disabling dynamic code.")
-    set(DISABLE_DYNAMIC_CODE ON)
+    #message(WARNING "Dynamic code is only supported with x64, disabling dynamic code.")
+    #set(DISABLE_DYNAMIC_CODE ON)
   endif(CMAKE_SYSTEM_PROCESSOR MATCHES "amd64.*|x86_64.*|AMD64.*")
 endif(NOT DISABLE_DYNAMIC_CODE)
 
